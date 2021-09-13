@@ -45,7 +45,7 @@ It was a balanced dataset. Violin plots were created for outliers detection. The
 Kernel Density Estimator plots and scatter plots were created for the features 'radius_worst','perimeter_worst','area_worst' for better understanding about the relationship between these three features. Then, the dataset was divided into independent(x) features and Dependent(Y) features for the purpose of Data Analysis. A correlation heatmap was made to check the correlation between all the independent features.
 
 The second step was to perform Feature Engneering. The dataset was divided into independent(X) and dependent(y) features. Label Encoding was performed on the target feature. 1 for Malignant(M) and 0 for Benign(B).
-Feature Scaling was performed using Sklearn's StandardScaler. Scaling was performed on 'concave points_mean','area_mean','radius_mean','perimeter_mean','concavity_mean' features.
+Feature Scaling was performed using Sklearn's StandardScaler. Scaling was performed on 'concave points_mean','area_mean','radius_mean','perimeter_mean','concavity_mean' .
 
 The third step was Feature Selection. Features were selected manually based on domain knowledge.
 concave points_mean','area_mean','radius_mean','perimeter_mean','concavity_mean' were the features that got selected.
