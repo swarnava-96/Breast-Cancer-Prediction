@@ -61,7 +61,8 @@ The final step was to save the model as a pickle file to reuse it again for the 
 
 The "Breast Cancer Prediction.ipynb" file contains all these informations.
 
-Deployment Architecture: The model was deployed locally (port 5000). The backend part of the application was made using Flask and for the frotend part HTML and CSS was used.
+### Deployment Architecture: 
+The model was deployed locally (port 5000). The backend part of the application was made using Flask and for the frotend part HTML and CSS was used.
 I have not focussed much on the frontend as I am not that good at it. The file "app.py" contains the entire flask code and inside the templates folder, "cancer.html" contains the homepage and "result.html" contains the result page. 
 
 ### Installation:
