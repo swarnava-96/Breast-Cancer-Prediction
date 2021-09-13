@@ -3,7 +3,7 @@
 #### Goal: To develop a POC using Flask, HTML and CSS for predicting whether a person is suffering from Breast Cancer or not, implementing Machine Learning algorithm.
 
 ### About the Data set: 
-This is a machine learning project where we will predict whether a person is suffering Breast Cancer or not. The dataset was downloaded from [Kaggle](https://www.kaggle.com/uciml/breast-cancer-wisconsin-data).
+This is a machine learning project where we will predict whether a person is suffering from Breast Cancer or not. The dataset was downloaded from [Kaggle](https://www.kaggle.com/uciml/breast-cancer-wisconsin-data).
 
 Attribute Information:
 
