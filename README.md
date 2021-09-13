@@ -39,30 +39,22 @@ The target column says whether the person is having the disease or not based on 
 
 ### Project Description: 
 After loading the dataset("breast_cancer.csv") the first step was to perform an extensive Exploratory Data Analysis(EDA).
-Initially, the two features "Unnamed: 32" and "id" was dropped as "Unnamed: 32" has 569 of nan values and "id" was not that useful.
-Then countplots were created for the target feature to check whether the dataset is balanced or not.
-It was a balanced dataset. Violin plots were created for outliers detection. Then Joint plots for features concavity_worst and concave points_worst were created and it was found that these two features were highly correlated.
-Kernel Density Estimator plots and scatter plots were created for the features 'radius_worst','perimeter_worst','area_worst' for better understanding about the relationship between these three features. Then, the dataset was divided into independent(x) features and Dependent(Y) features for the purpose of Data Analysis. A correlation heatmap was made to check the correlation between all the independent features.
+Initially, the two features "Unnamed: 32" and "id" was dropped as "Unnamed: 32" has 569 nan values and "id" was not that useful. Then countplots were created for the target feature to check whether the dataset is balanced or not. It was a balanced dataset. Violin plots were created for outliers detection. Then Joint plots for features concavity_worst and concave points_worst were created and it was found that these two features were highly correlated. Kernel Density Estimator plots and scatter plots were created for the features 'radius_worst','perimeter_worst','area_worst' for better understanding about the relationship between these three features. Then, the dataset was divided into independent(x) features and Dependent(Y) features for the purpose of Data Analysis. A correlation heatmap was made to check the correlation between all the independent features(x).
 
-The second step was to perform Feature Engneering. The dataset was divided into independent(X) and dependent(y) features. Label Encoding was performed on the target feature. 1 for Malignant(M) and 0 for Benign(B).
-Feature Scaling was performed using Sklearn's StandardScaler. Scaling was performed on 'concave points_mean','area_mean','radius_mean','perimeter_mean','concavity_mean' .
+The second step was to perform Feature Engneering. The dataset was divided into independent(X) and dependent(y) features for model building purpose. Label Encoding was performed on the target feature. 1 for Malignant(M) and 0 for Benign(B). Feature Scaling was performed using Sklearn's StandardScaler. Scaling was performed on 'concave points_mean','area_mean','radius_mean','perimeter_mean','concavity_mean' .
 
-The third step was Feature Selection. Features were selected manually based on domain knowledge.
-concave points_mean','area_mean','radius_mean','perimeter_mean','concavity_mean' were the features that got selected.
+The third step was Feature Selection. Features were selected manually based on domain knowledge. concave points_mean','area_mean','radius_mean','perimeter_mean','concavity_mean' were the features that got selected.
 
-The Forth step was Model Building. Train test split was performed for getting the train and test datasets.
-Logistic Regression was applied on the training data after testing with other Machine Learning algorithmns.
-Predicton and validaion was performed on the test dataset.
+The Forth step was Model Building. Train test split was performed for getting the train and test datasets. Logistic Regression was applied on the training data after testing with other Machine Learning algorithmns. Predicton and validaion was performed on the test dataset.
 
-The fifth step was to perform Hyperparameter Optimization on our model. A range of parameters for "penalty", "C", "solver", "max_iter" was selected and passed through GridSearchCV.
-The model was then fitted with the best parameters. The main aim was to reduce the False Positives and the False Negatives. Model performed really good and validated based on classification report, confusion matrix and accuracy score.
+The fifth step was to perform Hyperparameter Optimization on our model. A range of parameters for "penalty", "C", "solver", "max_iter" was selected and passed through GridSearchCV. The model was then fitted with the best parameters. The main aim was to reduce the False Positives and the False Negatives. Model performed really good and validated based on classification report, confusion matrix and accuracy score.
 
 The final step was to save the model as a pickle file to reuse it again for the Deployment purpose. Joblib was used to dump the model at the desired location.
 
 The "Breast Cancer Prediction.ipynb" file contains all these informations.
 
 ### Deployment Architecture: 
-The model was deployed locally (port 5000). The backend part of the application was made using Flask and for the frotend part HTML and CSS was used.
+The model was deployed locally (port: 5000). The backend part of the application was made using Flask and for the frotend part HTML and CSS was used.
 I have not focussed much on the frontend as I am not that good at it. The file "app.py" contains the entire flask code and inside the templates folder, "cancer.html" contains the homepage and "result.html" contains the result page. 
 
 ### Installation:
